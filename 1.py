@@ -1,0 +1,18 @@
+list=[]
+list.append('bmw')
+list.append('audi')
+list.append('kia')
+list.append('hino')
+print(list)
+list.sort()
+print(list)
+print(list[1])
+list.insert(1, 'volvo')
+print(sorted(list))
+del list[0]
+print(list)
+list.sort()
+list.remove('bmw')
+print(len(list))
+list.reverse()
+print(list)
