@@ -1,17 +1,13 @@
-aliens = []
-for alien_0 in range(31):
-    new_alien = {'number': alien_0, 'color': 'green', 'points': 5+alien_0, 'speed': 'slow'}
-    aliens.append(new_alien)
+from test_mod import *
 
-for all in aliens[:5]:
-    print(all)
-print(len(aliens))
-message = input("Введите значение: ")
-message = int(message)
-if message < 50:
-    print("Маловато будет")
-else:
-    print("Вот теперь норма")
-while message>=7:
-    print(f"Ждём... {message}")
-    message -= 1
+active = True
+
+while active:
+    name = input("Введите ваше имя: ")
+    if name == 'quit':
+        hello(txt='Всем спасибо, все свободны!')
+        active = False
+    else:
+        hello(names=name)
+        is_nums = is_num(name)
+        print(is_nums)
