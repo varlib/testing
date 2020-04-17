@@ -1,13 +1,11 @@
-def hello(names='', txt="Привет дружок"):
-    print(f"{txt} {names.title()}")
+class Restaurant:
 
+    def __init__(self, restaurant_name, cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
 
-def is_num(num):
-    if num.isdigit():
-        return "Это число"
-    else:
-        try:
-            float(num)
-            return "Это число"
-        except ValueError:
-            return "Это нифига не число"
+    def describe_restaurant(self):
+        print(f"Ресторан {self.restaurant_name}. Тип кухни: {self.cuisine_type}")
+
+    def open_restaurant(self):
+        print(f"Наш ресторан {self.restaurant_name} сейчас открыт")

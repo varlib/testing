@@ -1,13 +1,17 @@
 from test_mod import *
+from user_class import *
 
-active = True
+restaurant = Restaurant("Голубая лагуна", "Русская")
+restaurant1 = Restaurant("МореМания", "Итальянская")
+restaurant2 = Restaurant("Якитория", "Китайская")
 
-while active:
-    name = input("Введите ваше имя: ")
-    if name == 'quit':
-        hello(txt='Всем спасибо, все свободны!')
-        active = False
-    else:
-        hello(names=name)
-        is_nums = is_num(name)
-        print(is_nums)
+restaurant.describe_restaurant()
+restaurant1.describe_restaurant()
+restaurant2.describe_restaurant()
+
+user1 = User("Иванов", "Иван", "ivanov", "123", "Иваново")
+user2 = User("Петров", "Василий", "admin", "qwerty", "Махачкала")
+
+user2.hello_user()
+user2.describe_user()
+user1.hello_user()
