@@ -58,7 +58,8 @@
       <workItem from="1587117839197" duration="602000" />
       <workItem from="1587123028389" duration="11000" />
       <workItem from="1587123367350" duration="11850000" />
-      <workItem from="1587206479586" duration="8275000" />
+      <workItem from="1587206479586" duration="12455000" />
+      <workItem from="1587225764086" duration="1285000" />
     </task>
     <servers />
   </component>
@@ -77,5 +78,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/alien_class.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
