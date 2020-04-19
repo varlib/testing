@@ -1,11 +1,7 @@
-import class_die
-import json
+import matplotlib.pyplot as plt
 
-lotery_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'a', 's', 'd', 'f', 'g']
-lott = class_die.Lottery(lotery_list)
-numbers = lott.get_win()
-print(numbers)
+squares = [1, 4, 9, 16, 25]
+ax = plt.subplot()
+ax.plot(squares)
 
-filename = '../files/test.json'
-with open(filename, 'a') as f:
-    json.dump(numbers, f)
+plt.show()
